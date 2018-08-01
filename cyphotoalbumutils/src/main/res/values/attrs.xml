@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CropImageView">
+        <attr name="cropMaskColor" format="color"/>
+        <attr name="cropBorderColor" format="color"/>
+        <attr name="cropBorderWidth" format="dimension"/>
+        <attr name="cropFocusWidth" format="dimension"/>
+        <attr name="cropFocusHeight" format="dimension"/>
+        <attr name="cropStyle" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="circle" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundFrameLayout">
+        <attr name="radius" format="dimension" />
+        <attr name="topLeftRadius" format="dimension" />
+        <attr name="topRightRadius" format="dimension" />
+        <attr name="bottomLeftRadius" format="dimension" />
+        <attr name="bottomRightRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="SquareLayout">
+
+        <!-- 宽高比 -->
+        <attr name="aspectRatio" format="float|reference" />
+    </declare-styleable>
+    <declare-styleable name="SelectorImageView">
+        <attr name="srcSelected" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="SelectorFrameLayout">
+        <attr name="backgroundSelected" format="reference|color" />
+        <attr name="backgroundUnSelected" format="reference|color" />
+        <attr name="selected" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SelectorCheckBox">
+        <attr name="backgroundUnChecked" format="reference|color" />
+        <attr name="backgroundChecked" format="reference|color" />
+        <attr name="textColorUnChecked" format="color" />
+        <attr name="textColorChecked" format="color" />
+        <attr name="buttonUnChecked" format="reference" />
+        <attr name="buttonChecked" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ImageViewCheckBox">
+        <attr name="bgUnChecked" format="reference|color" />
+        <attr name="bgChecked" format="reference|color" />
+        <attr name="srcUnChecked" format="reference" />
+        <attr name="srcChecked" format="reference" />
+        <attr name="checked" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="IVTVLinearLayout">
+        <attr name="src" format="integer" />
+        <attr name="android:scaleType"/>
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize"  format="dimension"/>
+        <attr name="distance" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="SlideDetailsLayout">
+        <!-- float value for indicate the moment of switch panel-->
+        <attr name="percent" format="float"/>
+        <!-- how long the animation keep-->
+        <attr name="duration" format="integer"/>
+        <!-- default panel to show after init-->
+        <attr name="default_panel" format="enum">
+            <enum name="front" value="0"/>
+            <enum name="behind" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="width_space" format="dimension"/>
+        <attr name="height_space" format="dimension"/>
+    </declare-styleable>
+
+</resources>

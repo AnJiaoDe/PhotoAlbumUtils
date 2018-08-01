@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cy.photoalbumutils.RVScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    style="@style/transparent_statusbar_fit"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="裁剪"/>
+        <!--<EditText-->
+            <!--android:id="@+id/et_count"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--android:hint="上传多少张"-->
+            <!--android:inputType="number" />-->
+
+        <com.cy.cyphotoalbumutils.recyclerview.GridRecyclerView
+            android:id="@+id/grv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="30dp"-->
+
+            <!--android:text="矩形裁剪" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_rectangle"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/add" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+
+            android:text="圆形裁剪" />
+
+        <ImageView
+            android:id="@+id/iv_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/add" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不裁剪"/>
+        <com.cy.cyphotoalbumutils.recyclerview.GridRecyclerView
+            android:id="@+id/grv_not_crop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</com.cy.photoalbumutils.RVScrollView>

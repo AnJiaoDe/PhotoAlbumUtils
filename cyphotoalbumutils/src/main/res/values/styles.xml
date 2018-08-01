@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/theme</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:textColor">@color/text_deep</item>
+        <item name="android:textSize">@dimen/size_3</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:launchMode">singleTop</item>
+
+    </style>
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="TransparentTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+
+
+    <style name="padding_content">
+        <item name="android:paddingLeft">@dimen/padding_content</item>
+        <item name="android:paddingRight">@dimen/padding_content</item>
+    </style>
+
+
+    <style name="iv_title_padding_content" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:padding">@dimen/padding_content</item>
+    </style>
+    <style name="tv_singleline_ellip" >
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="et_phone" >
+        <item name="android:maxLength">11</item>
+        <item name="android:inputType">numberSigned</item>
+    </style>
+
+    <style name="tv_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_deep</item>
+        <item name="android:textSize">@dimen/size_2</item>
+    </style>
+    <style name="et_login">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/padding_content</item>
+        <item name="android:background">@drawable/line_bottom</item>
+        <item name="android:textSize">@dimen/size_3</item>
+    </style>
+
+    <style name="padding_content_small">
+        <item name="android:paddingLeft">@dimen/padding_small</item>
+        <item name="android:paddingRight">@dimen/padding_small</item>
+    </style>
+
+
+
+
+</resources>

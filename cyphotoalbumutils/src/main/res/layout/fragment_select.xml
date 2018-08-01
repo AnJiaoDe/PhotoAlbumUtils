@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    android:orientation="vertical">
+    <com.cy.translucentparent.StatusBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/iv_title_padding_content"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/tv_title_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="图片"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_content"
+            android:background="@drawable/white_shape"
+            android:text="完成"
+            android:enabled="false"
+            android:textColor="@color/text_tint" />
+
+    </RelativeLayout>
+
+    <com.cy.cyphotoalbumutils.recyclerview.GridRecyclerView
+        android:id="@+id/grv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="1dp"
+        android:layout_weight="1"
+        android:paddingTop="1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/footer_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        android:background="@color/theme"
+        android:paddingLeft="@dimen/padding_content">
+
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:minWidth="80dp"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="所有图片"
+            android:textColor="@color/white" />
+
+        <ImageView
+            style="@style/iv_title_padding_content"
+            android:src="@drawable/text_indicator" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:gravity="center"
+            android:text="预览"
+            android:enabled="false"
+            android:textColor="@color/text_tint" />
+
+    </LinearLayout>
+</LinearLayout>

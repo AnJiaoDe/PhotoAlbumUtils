@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+
+    android:layout_height="60dp"
+    android:layout_marginBottom="@dimen/padding_small"
+    android:layout_marginRight="@dimen/padding_small">
+    <View
+        android:id="@+id/view_stroke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/line_bottom_white"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_margin="2dp"
+        android:background="@color/default_album"
+
+        android:scaleType="centerCrop" />
+
+
+    <ImageView
+        android:id="@+id/iv_check"
+        style="@style/iv_title_padding_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:padding="@dimen/padding_small"
+        android:src="@drawable/album_cb" />
+
+</FrameLayout>
